@@ -1,0 +1,905 @@
+{
+  "total_samples": 40,
+  "train_samples": 24,
+  "val_samples": 8,
+  "test_samples": 8,
+  "train_events": [
+    "GFD_MODIS_3914",
+    "GFD_MODIS_4821",
+    "GFD_MODIS_4930",
+    "GFD_MODIS_4650",
+    "GFD_MODIS_4780",
+    "GFD_MODIS_4905"
+  ],
+  "val_events": [
+    "GFD_MODIS_4102",
+    "GFD_MODIS_3760"
+  ],
+  "test_events": [
+    "GFD_MODIS_4210",
+    "GFD_MODIS_3350"
+  ],
+  "created_at": "2026-10-21T07:07:48.700895+00:00",
+  "samples": [
+    {
+      "sample_id": "GFD_MODIS_3914_pos_0",
+      "event_id": "GFD_MODIS_3914",
+      "country": "India",
+      "latitude": 13.0627,
+      "longitude": 80.2507,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2015-11-28",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261016T003101_20261016T003126_005033_009838_B727.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3914_neg_1",
+      "event_id": "GFD_MODIS_3914",
+      "country": "India",
+      "latitude": 13.6827,
+      "longitude": 80.8707,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2015-11-28",
+      "sar_product": "S1A_IW_GRDH_1SDV_20151128_REPRESENTATIVE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3914_pos_2",
+      "event_id": "GFD_MODIS_3914",
+      "country": "India",
+      "latitude": 13.1027,
+      "longitude": 80.2907,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2015-11-28",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261016T003101_20261016T003126_005033_009838_B727.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3914_neg_3",
+      "event_id": "GFD_MODIS_3914",
+      "country": "India",
+      "latitude": 13.8827,
+      "longitude": 81.0707,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2015-11-28",
+      "sar_product": "S1A_IW_GRDH_1SDV_20151128_REPRESENTATIVE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4821_pos_0",
+      "event_id": "GFD_MODIS_4821",
+      "country": "Germany",
+      "latitude": 50.5238,
+      "longitude": 7.0936,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2021-07-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T054158_20261019T054223_005080_0099C9_F4DD.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4821_neg_1",
+      "event_id": "GFD_MODIS_4821",
+      "country": "Germany",
+      "latitude": 51.1438,
+      "longitude": 7.7136,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2021-07-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T054133_20261019T054158_005080_0099C9_4E3A.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4821_pos_2",
+      "event_id": "GFD_MODIS_4821",
+      "country": "Germany",
+      "latitude": 50.5638,
+      "longitude": 7.1336,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2021-07-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T054133_20261019T054158_005080_0099C9_4E3A.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4821_neg_3",
+      "event_id": "GFD_MODIS_4821",
+      "country": "Germany",
+      "latitude": 51.3438,
+      "longitude": 7.9136,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2021-07-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T054133_20261019T054158_005080_0099C9_4E3A.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4930_pos_0",
+      "event_id": "GFD_MODIS_4930",
+      "country": "Pakistan",
+      "latitude": 27.5389,
+      "longitude": 68.182,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-06-14",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T132702_20261019T132732_005085_0099F0_9E3F.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4930_neg_1",
+      "event_id": "GFD_MODIS_4930",
+      "country": "Pakistan",
+      "latitude": 28.1589,
+      "longitude": 68.802,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-06-14",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T132732_20261019T132757_005085_0099F0_8226.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4930_pos_2",
+      "event_id": "GFD_MODIS_4930",
+      "country": "Pakistan",
+      "latitude": 27.5789,
+      "longitude": 68.222,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-06-14",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T132702_20261019T132732_005085_0099F0_9E3F.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4930_neg_3",
+      "event_id": "GFD_MODIS_4930",
+      "country": "Pakistan",
+      "latitude": 28.3589,
+      "longitude": 69.002,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-06-14",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T132732_20261019T132757_005085_0099F0_8226.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4650_pos_0",
+      "event_id": "GFD_MODIS_4650",
+      "country": "United States",
+      "latitude": 38.607,
+      "longitude": -90.2194,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2019-03-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261003T235535_20261003T235600_004858_00921E_FF97.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4650_neg_1",
+      "event_id": "GFD_MODIS_4650",
+      "country": "United States",
+      "latitude": 39.227,
+      "longitude": -89.5994,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2019-03-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261003T235600_20261003T235625_004858_00921E_F934.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4650_pos_2",
+      "event_id": "GFD_MODIS_4650",
+      "country": "United States",
+      "latitude": 38.647,
+      "longitude": -90.1794,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2019-03-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261003T235535_20261003T235600_004858_00921E_FF97.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4650_neg_3",
+      "event_id": "GFD_MODIS_4650",
+      "country": "United States",
+      "latitude": 39.427,
+      "longitude": -89.3994,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2019-03-12",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261003T235600_20261003T235625_004858_00921E_F934.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4780_pos_0",
+      "event_id": "GFD_MODIS_4780",
+      "country": "China",
+      "latitude": 30.5728,
+      "longitude": 114.2855,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2020-06-02",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261017T102700_20261017T102725_005054_0098E9_E5FD.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4780_neg_1",
+      "event_id": "GFD_MODIS_4780",
+      "country": "China",
+      "latitude": 31.1928,
+      "longitude": 114.9055,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2020-06-02",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261012T101900_20261012T101925_004981_00966C_C661.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4780_pos_2",
+      "event_id": "GFD_MODIS_4780",
+      "country": "China",
+      "latitude": 30.6128,
+      "longitude": 114.3255,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2020-06-02",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261017T102700_20261017T102725_005054_0098E9_E5FD.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4780_neg_3",
+      "event_id": "GFD_MODIS_4780",
+      "country": "China",
+      "latitude": 31.3928,
+      "longitude": 115.1055,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2020-06-02",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261012T101900_20261012T101925_004981_00966C_C661.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4905_pos_0",
+      "event_id": "GFD_MODIS_4905",
+      "country": "Australia",
+      "latitude": -27.4898,
+      "longitude": 153.0051,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-02-23",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T191309_20261019T191334_005088_009A16_A963.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4905_neg_1",
+      "event_id": "GFD_MODIS_4905",
+      "country": "Australia",
+      "latitude": -26.8698,
+      "longitude": 153.6251,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-02-23",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T191309_20261019T191334_005088_009A16_A963.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4905_pos_2",
+      "event_id": "GFD_MODIS_4905",
+      "country": "Australia",
+      "latitude": -27.4498,
+      "longitude": 153.0451,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-02-23",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T191309_20261019T191334_005088_009A16_A963.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4905_neg_3",
+      "event_id": "GFD_MODIS_4905",
+      "country": "Australia",
+      "latitude": -26.6698,
+      "longitude": 153.8251,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-02-23",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261019T191309_20261019T191334_005088_009A16_A963.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4102_pos_0",
+      "event_id": "GFD_MODIS_4102",
+      "country": "Brazil",
+      "latitude": -30.0546,
+      "longitude": -51.2377,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2024-04-29",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T084826_20261017T084851_009922_013C7C_58ED.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4102_neg_1",
+      "event_id": "GFD_MODIS_4102",
+      "country": "Brazil",
+      "latitude": -29.4346,
+      "longitude": -50.6177,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2024-04-29",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T084801_20261017T084826_009922_013C7C_F18F.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4102_pos_2",
+      "event_id": "GFD_MODIS_4102",
+      "country": "Brazil",
+      "latitude": -30.0146,
+      "longitude": -51.1977,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2024-04-29",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T084826_20261017T084851_009922_013C7C_58ED.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4102_neg_3",
+      "event_id": "GFD_MODIS_4102",
+      "country": "Brazil",
+      "latitude": -29.2346,
+      "longitude": -50.4177,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2024-04-29",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T084801_20261017T084826_009922_013C7C_F18F.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3760_pos_0",
+      "event_id": "GFD_MODIS_3760",
+      "country": "Nigeria",
+      "latitude": 7.7769,
+      "longitude": 6.7205,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-09-01",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T052030_20261017T052055_009920_013C6D_7648.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3760_neg_1",
+      "event_id": "GFD_MODIS_3760",
+      "country": "Nigeria",
+      "latitude": 8.3969,
+      "longitude": 7.3405,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-09-01",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T052005_20261017T052030_009920_013C6D_D50A.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3760_pos_2",
+      "event_id": "GFD_MODIS_3760",
+      "country": "Nigeria",
+      "latitude": 7.8169,
+      "longitude": 6.7605,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-09-01",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T052030_20261017T052055_009920_013C6D_7648.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3760_neg_3",
+      "event_id": "GFD_MODIS_3760",
+      "country": "Nigeria",
+      "latitude": 8.5969,
+      "longitude": 7.5405,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-09-01",
+      "sar_product": "S1C_IW_GRDH_1SDV_20261017T052005_20261017T052030_009920_013C6D_D50A.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": false,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4210_pos_0",
+      "event_id": "GFD_MODIS_4210",
+      "country": "Bangladesh",
+      "latitude": 24.8749,
+      "longitude": 91.8487,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-05-15",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261014T234657_20261014T234722_005018_0097C3_E573.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4210_neg_1",
+      "event_id": "GFD_MODIS_4210",
+      "country": "Bangladesh",
+      "latitude": 25.4949,
+      "longitude": 92.4687,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-05-15",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261014T234632_20261014T234657_005018_0097C3_568B.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4210_pos_2",
+      "event_id": "GFD_MODIS_4210",
+      "country": "Bangladesh",
+      "latitude": 24.9149,
+      "longitude": 91.8887,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2022-05-15",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261014T234657_20261014T234722_005018_0097C3_E573.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_4210_neg_3",
+      "event_id": "GFD_MODIS_4210",
+      "country": "Bangladesh",
+      "latitude": 25.6949,
+      "longitude": 92.6687,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2022-05-15",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261014T234632_20261014T234657_005018_0097C3_568B.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_pos_0",
+      "event_id": "GFD_MODIS_3350",
+      "country": "United Kingdom",
+      "latitude": 53.5028,
+      "longitude": -1.1512,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2019-11-07",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261020T062214_20261020T062239_005095_009A4B_A8AD.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_neg_1",
+      "event_id": "GFD_MODIS_3350",
+      "country": "United Kingdom",
+      "latitude": 54.1228,
+      "longitude": -0.5312,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2019-11-07",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261020T062149_20261020T062214_005095_009A4B_AB09.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_pos_2",
+      "event_id": "GFD_MODIS_3350",
+      "country": "United Kingdom",
+      "latitude": 53.5428,
+      "longitude": -1.1112,
+      "target_flood_within_48h": 1.0,
+      "provenance": "Global Flood Database (MODIS Events V1) / DFO Record",
+      "target_timestamp": "2019-11-07",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261020T062214_20261020T062239_005095_009A4B_A8AD.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_neg_3",
+      "event_id": "GFD_MODIS_3350",
+      "country": "United Kingdom",
+      "latitude": 54.3228,
+      "longitude": -0.3312,
+      "target_flood_within_48h": 0.0,
+      "provenance": "Paired Non-Flooded Reference",
+      "target_timestamp": "2019-11-07",
+      "sar_product": "S1D_IW_GRDH_1SDV_20261020T062149_20261020T062214_005095_009A4B_AB09.SAFE",
+      "modality_masks": {
+        "sar_available": 1.0,
+        "weather_historical_available": 1.0,
+        "weather_forecast_available": 1.0,
+        "terrain_available": 1.0
+      },
+      "data_quality_flags": {
+        "is_real_api_weather": true,
+        "is_real_elevation": true,
+        "is_synthetic_sar": true
+      }
+    }
+  ]
+}

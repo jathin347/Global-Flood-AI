@@ -1,0 +1,24 @@
+{
+  "status": "success",
+  "total_samples": 40,
+  "train_count": 24,
+  "val_count": 8,
+  "test_count": 8,
+  "train_events": [
+    "GFD_MODIS_3914",
+    "GFD_MODIS_4821",
+    "GFD_MODIS_4930",
+    "GFD_MODIS_4650",
+    "GFD_MODIS_4780",
+    "GFD_MODIS_4905"
+  ],
+  "val_events": [
+    "GFD_MODIS_4102",
+    "GFD_MODIS_3760"
+  ],
+  "test_events": [
+    "GFD_MODIS_4210",
+    "GFD_MODIS_3350"
+  ],
+  "manifest_file": "/Users/jathinaraveti/Desktop/ML/GlobalFloodAI/data/processed/dataset_manifest.json"
+}

@@ -1,0 +1,434 @@
+{
+  "evaluation_scope": "GlobalFlood AI Scientific Evaluation on Held-Out Test Events",
+  "timestamp": "2026-10-21T12:35:25",
+  "split_protocol": "Strict Event-Grouped Isolation (Zero spatial or temporal leakage)",
+  "test_events": [
+    "GFD_MODIS_3350",
+    "GFD_MODIS_4210"
+  ],
+  "sample_count": 8,
+  "models": {
+    "multimodal_flood_net_calibrated": {
+      "model_name": "MultimodalFloodNet (Platt Calibrated)",
+      "sample_count": 8,
+      "discrimination_metrics": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0
+      },
+      "threshold_metrics_at_0_50": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "accuracy": 1.0,
+        "specificity_true_negative_rate": 1.0,
+        "balanced_accuracy": 1.0
+      },
+      "optimal_threshold_tuning": {
+        "optimal_threshold": 0.6543,
+        "optimal_f1_score": 1.0
+      },
+      "confusion_matrix": {
+        "true_negatives_tn": 4,
+        "false_positives_fp": 0,
+        "false_negatives_fn": 0,
+        "true_positives_tp": 4,
+        "grid_2x2": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "probabilistic_and_reliability_metrics": {
+        "brier_score": 0.119559,
+        "log_loss_bce": 0.4243,
+        "expected_calibration_error_ece": 0.3458,
+        "maximum_calibration_error_mce": 0.3461
+      },
+      "calibration_bins": [
+        {
+          "bin_range": "[0.00, 0.20]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.20, 0.40]",
+          "count": 4,
+          "empirical_accuracy": 0.0,
+          "mean_confidence": 0.3461,
+          "calibration_gap": 0.3461
+        },
+        {
+          "bin_range": "[0.40, 0.60]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.60, 0.80]",
+          "count": 4,
+          "empirical_accuracy": 1.0,
+          "mean_confidence": 0.6546,
+          "calibration_gap": 0.3454
+        },
+        {
+          "bin_range": "[0.80, 1.00]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        }
+      ]
+    },
+    "multimodal_flood_net_raw": {
+      "model_name": "MultimodalFloodNet (Raw Uncalibrated)",
+      "sample_count": 8,
+      "discrimination_metrics": {
+        "roc_auc": 1.0,
+        "pr_auc": 1.0
+      },
+      "threshold_metrics_at_0_50": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "accuracy": 1.0,
+        "specificity_true_negative_rate": 1.0,
+        "balanced_accuracy": 1.0
+      },
+      "optimal_threshold_tuning": {
+        "optimal_threshold": 0.9797,
+        "optimal_f1_score": 1.0
+      },
+      "confusion_matrix": {
+        "true_negatives_tn": 4,
+        "false_positives_fp": 0,
+        "false_negatives_fn": 0,
+        "true_positives_tp": 4,
+        "grid_2x2": [
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "probabilistic_and_reliability_metrics": {
+        "brier_score": 0.0004,
+        "log_loss_bce": 0.0201,
+        "expected_calibration_error_ece": 0.0199,
+        "maximum_calibration_error_mce": 0.0203
+      },
+      "calibration_bins": [
+        {
+          "bin_range": "[0.00, 0.20]",
+          "count": 4,
+          "empirical_accuracy": 0.0,
+          "mean_confidence": 0.0203,
+          "calibration_gap": 0.0203
+        },
+        {
+          "bin_range": "[0.20, 0.40]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.40, 0.60]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.60, 0.80]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.80, 1.00]",
+          "count": 4,
+          "empirical_accuracy": 1.0,
+          "mean_confidence": 0.9805,
+          "calibration_gap": 0.0195
+        }
+      ]
+    },
+    "tabular_logistic_baseline": {
+      "model_name": "Tabular Logistic Baseline (Rainfall + Terrain)",
+      "sample_count": 8,
+      "discrimination_metrics": {
+        "roc_auc": 0.9375,
+        "pr_auc": 0.9437
+      },
+      "threshold_metrics_at_0_50": {
+        "precision": 0.8,
+        "recall": 1.0,
+        "f1_score": 0.8889,
+        "accuracy": 0.875,
+        "specificity_true_negative_rate": 0.75,
+        "balanced_accuracy": 0.875
+      },
+      "optimal_threshold_tuning": {
+        "optimal_threshold": 0.533,
+        "optimal_f1_score": 0.8889
+      },
+      "confusion_matrix": {
+        "true_negatives_tn": 3,
+        "false_positives_fp": 1,
+        "false_negatives_fn": 0,
+        "true_positives_tp": 4,
+        "grid_2x2": [
+          [
+            3,
+            1
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "probabilistic_and_reliability_metrics": {
+        "brier_score": 0.090756,
+        "log_loss_bce": 0.2582,
+        "expected_calibration_error_ece": 0.0967,
+        "maximum_calibration_error_mce": 0.467
+      },
+      "calibration_bins": [
+        {
+          "bin_range": "[0.00, 0.20]",
+          "count": 3,
+          "empirical_accuracy": 0.0,
+          "mean_confidence": 0.0001,
+          "calibration_gap": 0.0001
+        },
+        {
+          "bin_range": "[0.20, 0.40]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.40, 0.60]",
+          "count": 1,
+          "empirical_accuracy": 1.0,
+          "mean_confidence": 0.533,
+          "calibration_gap": 0.467
+        },
+        {
+          "bin_range": "[0.60, 0.80]",
+          "count": 2,
+          "empirical_accuracy": 0.5,
+          "mean_confidence": 0.6348,
+          "calibration_gap": 0.1348
+        },
+        {
+          "bin_range": "[0.80, 1.00]",
+          "count": 2,
+          "empirical_accuracy": 1.0,
+          "mean_confidence": 0.9816,
+          "calibration_gap": 0.0184
+        }
+      ]
+    },
+    "prior_frequency_baseline": {
+      "model_name": "Prior Frequency Baseline (Trivial Predictor)",
+      "sample_count": 8,
+      "discrimination_metrics": {
+        "roc_auc": 0.5,
+        "pr_auc": 0.75
+      },
+      "threshold_metrics_at_0_50": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1_score": 0.6667,
+        "accuracy": 0.5,
+        "specificity_true_negative_rate": 0.0,
+        "balanced_accuracy": 0.5
+      },
+      "optimal_threshold_tuning": {
+        "optimal_threshold": 0.5,
+        "optimal_f1_score": 0.6667
+      },
+      "confusion_matrix": {
+        "true_negatives_tn": 0,
+        "false_positives_fp": 4,
+        "false_negatives_fn": 0,
+        "true_positives_tp": 4,
+        "grid_2x2": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "probabilistic_and_reliability_metrics": {
+        "brier_score": 0.25,
+        "log_loss_bce": 0.6931,
+        "expected_calibration_error_ece": 0.0,
+        "maximum_calibration_error_mce": 0.0
+      },
+      "calibration_bins": [
+        {
+          "bin_range": "[0.00, 0.20]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.20, 0.40]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.40, 0.60]",
+          "count": 8,
+          "empirical_accuracy": 0.5,
+          "mean_confidence": 0.5,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.60, 0.80]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        },
+        {
+          "bin_range": "[0.80, 1.00]",
+          "count": 0,
+          "empirical_accuracy": null,
+          "mean_confidence": null,
+          "calibration_gap": 0.0
+        }
+      ]
+    }
+  },
+  "event_level_breakdown": [
+    {
+      "event_id": "GFD_MODIS_3350",
+      "samples": 4,
+      "flooded_count": 2,
+      "non_flooded_count": 2,
+      "mean_calibrated_probability_flooded": 0.6543,
+      "mean_calibrated_probability_non_flooded": 0.3469,
+      "brier_score": 0.119893,
+      "confusion_matrix": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    {
+      "event_id": "GFD_MODIS_4210",
+      "samples": 4,
+      "flooded_count": 2,
+      "non_flooded_count": 2,
+      "mean_calibrated_probability_flooded": 0.6548,
+      "mean_calibrated_probability_non_flooded": 0.3453,
+      "brier_score": 0.119225,
+      "confusion_matrix": [
+        [
+          2,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ]
+    }
+  ],
+  "individual_sample_predictions": [
+    {
+      "sample_id": "GFD_MODIS_4210_pos_0",
+      "event_id": "GFD_MODIS_4210",
+      "ground_truth_label": 1,
+      "raw_probability": 0.9812,
+      "calibrated_probability": 0.6548,
+      "predicted_risk_category": "high"
+    },
+    {
+      "sample_id": "GFD_MODIS_4210_neg_1",
+      "event_id": "GFD_MODIS_4210",
+      "ground_truth_label": 0,
+      "raw_probability": 0.0171,
+      "calibrated_probability": 0.3451,
+      "predicted_risk_category": "moderate"
+    },
+    {
+      "sample_id": "GFD_MODIS_4210_pos_2",
+      "event_id": "GFD_MODIS_4210",
+      "ground_truth_label": 1,
+      "raw_probability": 0.9812,
+      "calibrated_probability": 0.6548,
+      "predicted_risk_category": "high"
+    },
+    {
+      "sample_id": "GFD_MODIS_4210_neg_3",
+      "event_id": "GFD_MODIS_4210",
+      "ground_truth_label": 0,
+      "raw_probability": 0.0185,
+      "calibrated_probability": 0.3455,
+      "predicted_risk_category": "moderate"
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_pos_0",
+      "event_id": "GFD_MODIS_3350",
+      "ground_truth_label": 1,
+      "raw_probability": 0.9799,
+      "calibrated_probability": 0.6544,
+      "predicted_risk_category": "high"
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_neg_1",
+      "event_id": "GFD_MODIS_3350",
+      "ground_truth_label": 0,
+      "raw_probability": 0.0225,
+      "calibrated_probability": 0.3468,
+      "predicted_risk_category": "moderate"
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_pos_2",
+      "event_id": "GFD_MODIS_3350",
+      "ground_truth_label": 1,
+      "raw_probability": 0.9797,
+      "calibrated_probability": 0.6543,
+      "predicted_risk_category": "high"
+    },
+    {
+      "sample_id": "GFD_MODIS_3350_neg_3",
+      "event_id": "GFD_MODIS_3350",
+      "ground_truth_label": 0,
+      "raw_probability": 0.0232,
+      "calibrated_probability": 0.347,
+      "predicted_risk_category": "moderate"
+    }
+  ]
+}

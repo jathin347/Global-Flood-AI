@@ -1,0 +1,41 @@
+{
+  "project_name": "GlobalFlood AI",
+  "version": "1.0.0",
+  "target": "target_flood_within_48h",
+  "prediction_horizon_hours": 48,
+  "modalities": {
+    "satellite_sar": {
+      "satellite": "Sentinel-1",
+      "bands": ["VV", "VH"],
+      "patch_size": [128, 128],
+      "embedding_dim": 128
+    },
+    "weather_time_series": {
+      "historical_hours": 168,
+      "forecast_hours": 48,
+      "features": ["precipitation_mm", "temperature_2m_c", "relative_humidity_pct", "surface_pressure_hpa", "wind_speed_10m_kmh", "soil_moisture_m3m3"],
+      "embedding_dim": 64
+    },
+    "geographic_terrain": {
+      "features": ["elevation_m", "slope_degrees", "terrain_roughness_index", "topographic_wetness_index", "estimated_dist_to_drainage_km", "sin_lat", "cos_lat", "sin_lon", "cos_lon"],
+      "embedding_dim": 32
+    }
+  },
+  "training": {
+    "batch_size": 16,
+    "epochs": 25,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "early_stopping_patience": 5,
+    "class_weight_strategy": "inverse_frequency"
+  },
+  "calibration": {
+    "method": "platt",
+    "thresholds": {
+      "low": [0.0, 0.25],
+      "moderate": [0.25, 0.55],
+      "high": [0.55, 0.80],
+      "very_high": [0.80, 1.00]
+    }
+  }
+}
